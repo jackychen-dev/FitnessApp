@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".design">
+
+    <ScrollView
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:fillViewport="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="1000dp"
+            android:layout_height="1000dp">
+
+            <EditText
+                android:id="@+id/weightnum"
+                android:layout_width="96dp"
+                android:layout_height="69dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="187dp"
+                android:layout_marginTop="285dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="Enter Weight"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColorHighlight="#00973F3F"
+                android:textColorHint="#5C040404" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="174dp"
+                android:layout_height="39dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="46dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="Create an Exercise"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColorHighlight="#00973F3F"
+                android:textColorHint="#5C040404"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="105dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="44dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="Select a Day "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColorHighlight="#00973F3F"
+                android:textColorHint="#5C040404"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Action"
+                android:layout_width="116dp"
+                android:layout_height="72dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="467dp"
+                android:background="#BCF0DC"
+                android:text="Save Exercise To Selected Day"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/exerciseName"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="162dp"
+                android:layout_marginTop="109dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="Enter Exercise Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColorHighlight="#00973F3F"
+                android:textColorHint="#5C040404" />
+
+            <EditText
+                android:id="@+id/repnum"
+                android:layout_width="96dp"
+                android:layout_height="69dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="244dp"
+                android:layout_marginTop="181dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="Enter Number of Repititions"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColorHighlight="#00973F3F"
+                android:textColorHint="#5C040404" />
+
+            <EditText
+                android:id="@+id/setnum"
+                android:layout_width="96dp"
+                android:layout_height="69dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="136dp"
+                android:layout_marginTop="185dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="Enter Number of Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColorHighlight="#00973F3F"
+                android:textColorHint="#5C040404" />
+
+            <ToggleButton
+                android:id="@+id/Sunday"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="413dp"
+                android:background="#BCF0DC"
+                android:checked="false"
+                android:text="Sunday"
+                android:textOff="Sunday"
+                android:textOn="Sunday Selected"/>
+
+            <ToggleButton
+                android:id="@+id/Saturday"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="360dp"
+                android:background="#BCF0DC"
+                android:text="Saturday"
+                android:textOff="Saturday"
+                android:textOn="Saturday Selected"/>
+
+            <ToggleButton
+                android:id="@+id/Friday"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="308dp"
+                android:background="#BCF0DC"
+                android:text="Friday"
+                android:textOff="Friday"
+                android:textOn="Friday Selected"/>
+
+            <ToggleButton
+                android:id="@+id/Thursday"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="257dp"
+                android:background="#BCF0DC"
+                android:checked="false"
+                android:text="Thursday"
+                android:textOff="Thursday"
+                android:textOn="Thursday Selected"/>
+
+            <ToggleButton
+                android:id="@+id/Monday"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="99dp"
+                android:background="#BCF0DC"
+                android:checked="false"
+                android:text="Monday"
+                android:textOff="Monday"
+                android:textOn="Monday Selected" />
+
+            <ToggleButton
+                android:id="@+id/Tuesday"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="150dp"
+                android:background="#BCF0DC"
+                android:checked="false"
+                android:text="Tuesday"
+                android:textOff="Tuesday"
+                android:textOn="Tuesday Selected"/>
+
+            <ToggleButton
+                android:id="@+id/Wednesday"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="203dp"
+                android:background="#BCF0DC"
+                android:checked="false"
+                android:text="Wednesday"
+                android:textOff="Wednesday"
+                android:textOn="Wednesday Selected"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
